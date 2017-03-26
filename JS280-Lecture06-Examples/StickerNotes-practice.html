@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="SticyNotes-OOP/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app-practice-package.js"></script>
+    <script src="app-practice.js"></script>
+
+</head>
+
+<body>
+
+    <form>
+        <!--<div class="dropdown">
+            <button type="button" class="btn dropdpwn-toggle" data-toggle="dropdown">
+                Sticker's color
+            </button>
+            <ul class="dropdown-menu" id="note_color">
+                <li><button type="submit" valeu="LightGoldRodYellow">Yellow</button></li>
+                <li><button type="submit" value="PaleGreen">Green</button></li>
+                <li><button type="submit" value="LightPink">Pink</button></li>
+                <li><button type="submit" value="LightBlue">Blue</button></li>
+            </ul>
+        </div>-->
+        <label for="note_color">便利貼顏色:</label>
+        <select id="note_color">
+            <option value="LightGoldRodYellow">黃色</option>
+            <option value="PaleGreen">綠色</option>
+            <option value="LightPink">粉紅色</option>
+            <option value="LightBlue">藍色</option>
+        </select>
+        <label for="note_text">Note Content</label>
+        <input type="text" id="note_text">
+        <input type="button" id="add_sticker" value="adding">
+        <input type="button" id="clear_sticker" value="clear_all">
+    </form>
+    <ul id="stickers"></ul>
+
+</body>
+
+</html>
