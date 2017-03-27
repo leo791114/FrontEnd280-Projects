@@ -1,6 +1,6 @@
 {
   "name": "leo-first-npm-module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easy arithmetic",
   "main": "./src/index.js",
   "scripts": {
