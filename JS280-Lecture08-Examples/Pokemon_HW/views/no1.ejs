@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Pokemon:
+        <%=name %>
+            <%=nationalNo %>
+    </h1>
+    <div class="container-fluid">
+        <img src="Pokemons/Pokemons/<%=nationalNo %>.png" alt="">
+        <table>
+            <tr>
+                <th>National No:</th>
+                <td><strong><%=nationalNo %></strong></td>
+            </tr>
+            <tr>
+                <th>HP:</th>
+                <td><strong><%=hp %></strong></td>
+            </tr>
+            <tr>
+                <th>Type:</th>
+                <td>
+                    <%=type %>
+                </td>
+            </tr>
+            <tr>
+                <th>Species:</th>
+                <td><strong><%=species %></strong></td>
+            </tr>
+            <tr>
+                <th>Height:</th>
+                <td>
+                    <%=height %>
+                </td>
+            </tr>
+            <tr>
+                <th>Weight:</th>
+                <td>
+                    <%=weight %>
+                </td>
+            </tr>
+            <tr>
+                <th>Ablities:</th>
+                <td>
+                    <%=abilities %>
+                </td>
+            </tr>
+            <tr>
+                <th>Local No:</th>
+                <td>
+                    <%=localNo %>
+                </td>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td>
+                    <%=name %>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <button type="button" onclick="self.location.href='/pokemon'">Home</button>
+
+</body>
+
+</html>

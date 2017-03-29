@@ -9,13 +9,14 @@
 </head>
 
 <body>
-    <form action="./pokemon" method="GET">
-        <label for="nationalNo">Enter National Number:</label>
-        <input type="number" name="nationalNo">
-        <input type="submit" value="search">
-        <input type="reset" value="reset">
+    <h1>
+        Pokemon:
+        <%=name %>
+            <%=nationalNo %>
+    </h1>
+    <img src="Pokemons/Pokemons/<%=nationalNo %>.png" alt="">
+    <button type="button" onclick="self.location.href='/pokemon'">Home</button>
 
-    </form>
 </body>
 
 </html>
