@@ -18,7 +18,7 @@ function addStickyToList(sticky) {
         .css("background-color", sticky.color)
         .text(sticky.text)
         .click(deleteSticky)
-        .appendTo($stickies)
+        .appendTo($stickies);
 }
 
 function createSticky() {

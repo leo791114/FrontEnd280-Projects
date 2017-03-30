@@ -2,6 +2,7 @@ div {
     background-color: #8bdd55;
     padding: 0;
     margin: 0;
+    display: inline-block
 }
 
 table {

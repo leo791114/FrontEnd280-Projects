@@ -15,6 +15,9 @@ var pokemons = [
     { 'name': '小火龍', 'nationalNo': '004' },
     { 'name': '火恐龍', 'nationalNo': '005' },
     { 'name': '噴火龍', 'nationalNo': '006' },
+    { 'name': '傑尼龜', 'nationalNo': '007' },
+    { 'name': '卡咪龜', 'nationalNo': '008' },
+    { 'name': '水箭龜', 'nationalNo': '009' },
 ];
 
 app.get('/pokemon', function (req, res) {
@@ -43,5 +46,26 @@ app.get('/pokemon', function (req, res) {
     } else {
         res.render('query');
     }
+});
+
+app.get('/pokemon/all', function (req, res) {
+    var link = []
+    for (var index = 1; index <= 151; index++) {
+        if (index < 10) {
+            index = '00' + index;
+            link.push(index);
+        } else if (index < 100) {
+            index = '0' + index;
+            link.push(index);
+        } else {
+            link.push(index);
+        }
+
+    }
+    res.render('all', { 'nationalNo': link });
+});
+
+app.get('/home', function (req, res) {
+    res.redirect('/pokemon/all');
 });
 

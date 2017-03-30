@@ -9,6 +9,19 @@
 </head>
 
 <body>
+    <h1>Pokemon Catalog</h1>
+    <div>
+        <button type="button" onclick="self.location.href='/pokemon'">Home</button>
+    </div>
+    <% for (var index= 0; index < nationalNo.length ; index++){ %>
+        <a href="/pokemon?nationalNo=<%=nationalNo[index] %>">
+            <img src='../Pokemons/Pokemons/<%=nationalNo[index] %>.png' alt="">
+        </a>
+        <% } %>
+
+
+
+
 
 </body>
 
